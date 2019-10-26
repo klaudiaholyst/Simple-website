@@ -4,7 +4,6 @@
     padding: 0;
     font-family: "Raleway", sans-serif;
     color: #262626;
-
 }
 
 .nav {
@@ -15,7 +14,8 @@
     background-color: whitesmoke;
     transition: 0.3s;
 }
-.small{
+
+.small {
     height: 100px;
 }
 
@@ -130,7 +130,8 @@
 .content__subtitle--about {
     text-align: start;
 }
-.content__subtitle--gallery{
+
+.content__subtitle--gallery {
     text-align: center;
     color: #262626;
 }
@@ -146,13 +147,14 @@
     font-weight: 900;
     color: #262626;
 }
-.content__subtitle--subscribe{
+
+.content__subtitle--subscribe {
     font-size: 40px;
     line-height: 27px;
     color: #262626;
     font-family: "Raleway";
     font-weight: 700;
-    text-align: right; 
+    text-align: right;
 }
 
 .content__subtitle--services {
@@ -242,7 +244,7 @@
     align-self: center;
     border: 1px solid #262626;
     padding-left: 15px;
-    outline-color:#262626;
+    outline-color: #262626;
 
 }
 
@@ -528,19 +530,21 @@
     color: #ffffff;
     font-family: "Raleway";
     padding: 15px;
-    outline-color:#262626;
+    outline-color: #262626;
 }
 
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-border: none;
-  -webkit-text-fill-color: white;
-  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 196, 196, 0.5) inset;
-  box-shadow: 0 0 0px 1000px rgba(0, 196, 196, 0.5) inset;;
+    border: none;
+    -webkit-text-fill-color: white;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(0, 196, 196, 0.5) inset;
+    box-shadow: 0 0 0px 1000px rgba(0, 196, 196, 0.5) inset;
+    ;
 }
+
 .form__input {
     height: 50px;
 }
@@ -776,9 +780,6 @@ border: none;
         line-height: 100px;
     }
 
-    /* .checkbox-input{
-        display: none;
-    } */
     .menu {
         display: none;
     }
@@ -797,14 +798,11 @@ border: none;
     }
 
     .section--about {
-
         height: 550px;
         background-image: url(img/bg-about.png), radial-gradient(circle at center, #00c3c3 0%, #00b8b7 32%, #00afae 68%, #009f9f 100%);
         background-size: 60%, 100%;
         background-repeat: no-repeat;
         background-position: -70% 10%, 0%;
-
-
     }
 
     .content__subtitle--about {
@@ -961,6 +959,7 @@ border: none;
 
     .footer {
         flex-direction: column;
+        height: auto;
     }
 }
 
