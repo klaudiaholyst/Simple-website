@@ -15,7 +15,8 @@
     <nav class="nav" id="nav">
         <div class="wrapper wrapper--nav">
             <a class="logo" href=#header>Cahee</a>
-            <button aria-haspopup="true" aria-expanded="false" class="menu-button" id="menu-button"><img src="img/bars.svg" alt="menu"></button>
+            <button aria-haspopup="true" aria-expanded="false" class="menu-button" id="menu-button"><img
+                    src="img/bars.svg" alt="menu"></button>
             <ul class="menu" id="menu">
                 <li><a class="menu__item menu__item--1">home</a></li>
                 <li><a class="menu__item menu__item--2">about</a></li>
@@ -51,6 +52,9 @@
     </section>
     <section class="section section--services" id="services">
         <div class="wrapper wrapper--services">
+            <div class="content content--services">
+                <h2 class="content__subtitle content__subtitle--services">Our Services</h2>
+            </div>
             <ul class="box">
                 <li class="box__element box__element--1">
                     <p class="box__text">Online Shopping</p>
@@ -65,9 +69,7 @@
                     <p class="box__text">Well Organized</p>
                 </li>
             </ul>
-            <div class="content content--services">
-                <h2 class="content__subtitle content__subtitle--services">Our Services</h2>
-            </div>
+
         </div>
     </section>
     <section class="section section--gallery" id="gallery">
@@ -113,21 +115,21 @@
             <article class="article article--1">
                 <div class="article__date">20</br>NOV</div>
                 <div class="article__description">
-                    <div class="article__titile">Green Smoothies: Too Much of a Good Thing?</div>
+                    <h3 class="article__titile">Green Smoothies: Too Much of a Good Thing?</h3>
                     <div class="article__author">By Auskteez</div>
                 </div>
             </article>
             <article class="article article--2">
                 <div class="article__date">14</br>NOV</div>
                 <div class="article__description">
-                    <div class="article__titile">Growing Food and "Thirst" for Innovation</div>
+                    <h3 class="article__titile">Growing Food and "Thirst" for Innovation</h3>
                     <div class="article__author">By Auskteez</div>
                 </div>
             </article>
             <article class="article article--3">
                 <div class="article__date">10</br>NOV</div>
                 <div class="article__description">
-                    <div class="article__titile">Pesticides & Food: What You Need to Know</div>
+                    <h3 class="article__titile">Pesticides & Food: What You Need to Know</h3>
                     <div class="article__author">By Auskteez</div>
                 </div>
             </article>
@@ -140,7 +142,7 @@
             <p class="content__text content__text--contact">For new projects, ideas, business or anything you would like
                 to discuss, contact me!</p>
         </div>
-        <div class="wrapper wrapper--contact" >
+        <div class="wrapper wrapper--contact">
             <div class="wrapper__form">
                 <form class="form" action="">
                     <input type="text" class="form__input" placeholder="Your name...">
@@ -149,20 +151,14 @@
                     <textarea class="form__textarea" name="" id="" wrap="hard" placeholder="Your message..."></textarea>
                 </form><button class="btn btn--contact" type="submit">send</button>
             </div>
-            <div class="wrapper__contact">
-                <div class="wrapper__box">
-                    <p class="wrapper__text wrapper__text--bold">address</p>
-                    <p class="wrapper__text">123 City Name, Street, Country</p>
-                </div>
-                <div class="wrapper__box">
-                    <p class="wrapper__text wrapper__text--bold">email</p>
-                    <p class="wrapper__text">cahee@domain.com</p>
-                </div>
-                <div class="wrapper__box">
-                    <p class="wrapper__text wrapper__text--bold">phone</p>
-                    <p class="wrapper__text">+43 2156987</p>
-                </div>
-            </div>
+            <dl class="definition-list">
+                <dt class="dt">address</dt>
+                <dd class="dd">123 City Name, Street, Country</dd>
+                <dt class="dt">email</dt>
+                <dd class="dd">cahee@domain.com</dd>
+                <dt class="dt">phone</dt>
+                <dd class="dd">+43 2156987</dd>
+            </dl>
         </div>
     </section>
     <footer class="footer">
@@ -171,7 +167,7 @@
         <p class="footer__text">Made with <span class="color">love</span> by Auskteez</p>
     </footer>
     <script src="jquery-3.4.1.min.js"></script>
-    <script src="scripts/script.js"></script>
+    <script type=module src="scripts/script.js"></script>
 </body>
 
 </html>

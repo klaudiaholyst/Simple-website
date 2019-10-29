@@ -5,6 +5,7 @@
     font-family: "Raleway", sans-serif;
     color: #262626;
 }
+
 .nav {
     position: fixed;
     height: 150px;
@@ -30,7 +31,7 @@
 }
 
 .wrapper--services {
-    display: flex;
+    flex-direction: row-reverse;
 }
 
 .logo {
@@ -42,10 +43,11 @@
     margin-bottom: auto;
     text-decoration: none;
 }
-.menu-button{
+
+.menu-button {
     display: none;
     height: 40px;
-    width:40px;
+    width: 40px;
     border: none;
     background: transparent;
 
@@ -559,7 +561,7 @@ input:-webkit-autofill:active {
     width: 40%;
 }
 
-.wrapper__contact {
+.definition-list {
     width: 40%;
     height: 100%;
     align-self: flex-start;
@@ -569,19 +571,16 @@ input:-webkit-autofill:active {
     color: white;
 }
 
-.wrapper__box {
-    margin-bottom: 15px;
-}
 
-.wrapper__text {
+.dd {
     font-size: 17px;
     line-height: 25px;
     color: #262626;
     font-family: "Raleway";
-
+    margin-bottom: 15px;
 }
 
-.wrapper__text--bold {
+.dt {
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -784,11 +783,13 @@ input:-webkit-autofill:active {
     .menu {
         display: none;
     }
+
     .menu__item:hover {
         border-top: #5585a2 1px solid;
         background-color: #a3c8df;
         cursor: pointer;
     }
+
     .content {
         width: 100%;
     }
@@ -816,7 +817,7 @@ input:-webkit-autofill:active {
     }
 
     .wrapper--services {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .content--services {
@@ -936,7 +937,7 @@ input:-webkit-autofill:active {
         width: 100%;
     }
 
-   .active {
+    .active {
         display: block;
         position: fixed;
         top: 100px;
