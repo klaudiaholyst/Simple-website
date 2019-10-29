@@ -14,23 +14,22 @@
 <body>
     <nav class="nav" id="nav">
         <div class="wrapper wrapper--nav">
-            <h1><a class="h1" href=#header>Cahee</a></h1>
-            <label for="nav-checkbox" class="hamburger"><i class="fas fa-bars"></i></label>
-            <input type="checkbox" id="nav-checkbox" class="checkbox-input">
-            <menu class="menu">
-                <a class="menu__link" href="#header">home</a>
-                <a class="menu__link" href="#about">about</a>
-                <a class="menu__link" href="#services">services</a>
-                <a class="menu__link" href="#gallery">gallery</a>
-                <a class="menu__link" href="#blog">blog</a>
-                <a class="menu__link" href="#contact">contact</a>
-            </menu>
+            <a class="logo" href=#header>Cahee</a>
+            <button aria-haspopup="true" aria-expanded="false" class="menu-button" id="menu-button"><img src="img/bars.svg" alt="menu"></button>
+            <ul class="menu" id="menu">
+                <li><a class="menu__item menu__item--1">home</a></li>
+                <li><a class="menu__item menu__item--2">about</a></li>
+                <li><a class="menu__item menu__item--3">services</a></li>
+                <li><a class="menu__item menu__item--4">gallery</a></li>
+                <li><a class="menu__item menu__item--5">blog</a></li>
+                <li><a class="menu__item menu__item--6">contact</a></button>
+            </ul>
         </div>
     </nav>
     <header class="header" id="header">
         <div class="wrapper">
             <div class="content content--free">
-                <h3 class="content__subtitle content__subtitle--free">Fresh Life</h3>
+                <h1 class="content__subtitle content__subtitle--free">Fresh Life</h1>
                 <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est alias voluptatem
                     quo aspernatur sit quibusdam tempora facilis quidem. Ullam eveniet deserunt eligendi quam
                     repudiandae beatae odio ad quidem velit nulla.</p>
@@ -73,7 +72,7 @@
     </section>
     <section class="section section--gallery" id="gallery">
         <div class="content content--gallery">
-            <h2 class="content__subtitle--gallery">Gallery</h2>
+            <h2 class="content__subtitle content__subtitle--gallery">Gallery</h2>
             <p class="content__text content__text--gallery">Lorem, ipsum dolor sit amet
                 consectetur adipisicing elit. Architecto officiis
                 temporibus sapiente aut quam placeat sint reprehenderit modi soluta dolor, eos tenetur quia nihil
@@ -90,9 +89,9 @@
     </section>
     <section class="section section--subscribe">
         <div class="content content--subscribe">
-            <h4 class="content__subtitle content__subtitle--subscribe item1">
+            <h2 class="content__subtitle content__subtitle--subscribe item1">
                 Subscribe To Us
-            </h4>
+            </h2>
             <p class="content__text item2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum repudiandae quia
                 voluptate
                 nobis eaque suscipit unde facere delectus praesentium blanditiis aspernatur aliquam, reiciendis
@@ -135,13 +134,13 @@
         </div>
         <button class="btn btn--blog" type="button">view more</button>
     </section>
-    <section class="section section--contact">
+    <section class="section section--contact" id="contact">
         <div class="content content--contact">
             <h2 class="content__subtitle content__subtitle--contact">Contact</h2>
             <p class="content__text content__text--contact">For new projects, ideas, business or anything you would like
                 to discuss, contact me!</p>
         </div>
-        <div class="wrapper wrapper--contact" id="contact">
+        <div class="wrapper wrapper--contact" >
             <div class="wrapper__form">
                 <form class="form" action="">
                     <input type="text" class="form__input" placeholder="Your name...">
@@ -171,6 +170,7 @@
         <a class="footer__logo" href="#header">Cahee</a>
         <p class="footer__text">Made with <span class="color">love</span> by Auskteez</p>
     </footer>
+    <script src="jquery-3.4.1.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 
