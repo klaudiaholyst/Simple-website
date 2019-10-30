@@ -18,38 +18,4 @@ document.addEventListener('scroll', function () {
 if (menu.classList.contains('active')) {
     menuItems.forEach(item => item.addEventListener('click', showOrHide));
 }
-
-$('.menu__item--1').on('click', function () {
-    $('body,html').animate({
-        scrollTop: $('#header').offset().top - 100
-    }, 500)
-})
-
-$('.menu__item--2').on('click', function () {
-    $('body,html').animate({
-        scrollTop: $('#about').offset().top - 100
-    }, 500)
-})
-$('.menu__item--3').on('click', function () {
-    $('body,html').animate({
-        scrollTop: $('#services').offset().top - 100
-    }, 500)
-})
-$('.menu__item--4').on('click', function () {
-    $('body,html').animate({
-        scrollTop: $('#gallery').offset().top - 100
-    }, 500)
-})
-
-$('.menu__item--5').on('click', function () {
-    $('body,html').animate({
-        scrollTop: $('#blog').offset().top - 100
-    }, 500)
-})
-$('.menu__item--6').on('click', function () {
-    $('body,html').animate({
-        scrollTop: $('#contact').offset().top - 100
-    }, 500)
-})
-
 }

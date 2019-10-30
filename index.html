@@ -18,12 +18,12 @@
             <button aria-haspopup="true" aria-expanded="false" class="menu-button" id="menu-button"><img
                     src="img/bars.svg" alt="menu"></button>
             <ul class="menu" id="menu">
-                <li><a class="menu__item menu__item--1">home</a></li>
-                <li><a class="menu__item menu__item--2">about</a></li>
-                <li><a class="menu__item menu__item--3">services</a></li>
-                <li><a class="menu__item menu__item--4">gallery</a></li>
-                <li><a class="menu__item menu__item--5">blog</a></li>
-                <li><a class="menu__item menu__item--6">contact</a></button>
+                <li><a class="menu__item menu__item--1" href="#header">home</a></li>
+                <li><a class="menu__item menu__item--2" href="#about">about</a></li>
+                <li><a class="menu__item menu__item--3" href="#services">services</a></li>
+                <li><a class="menu__item menu__item--4" href="#gallery">gallery</a></li>
+                <li><a class="menu__item menu__item--5" href="#blog">blog</a></li>
+                <li><a class="menu__item menu__item--6" href="#contact">contact</a></button>
             </ul>
         </div>
     </nav>
@@ -81,11 +81,15 @@
                 voluptatum est adipisci ducimus. Alias, veritatis.</p>
         </div>
         <div class="gallery">
-            <div class="gallery__pic1"><img class="gallery__pic" src="img/gallery(1).png" alt=""></div>
-            <div class="gallery__pic2"><img src="img/gallery(2).png" alt="khaki" class="gallery__pic"></div>
-            <div class="gallery__pic3"><img src="img/gallery(3).png" alt="joghurt" class="gallery__pic"></div>
-            <div class="gallery__pic4"><img src="img/gallery(4).png" alt="blackberries" class="gallery__pic"></div>
-            <div class="gallery__pic5"><img src="img/gallery(5).png" alt="blueberries" class="gallery__pic"></div>
+            <div class="gallery__pic gallery__pic--1"><img class="gallery__img" src="img/gallery(1).png" alt=""></div>
+            <div class="gallery__pic gallery__pic--2"><img src="img/gallery(2).png" alt="khaki" class="gallery__img">
+            </div>
+            <div class="gallery__pic gallery__pic--3"><img src="img/gallery(3).png" alt="joghurt" class="gallery__img">
+            </div>
+            <div class="gallery__pic gallery__pic--4"><img src="img/gallery(4).png" alt="blackberries"
+                    class="gallery__img"></div>
+            <div class="gallery__pic gallery__pic--5"><img src="img/gallery(5).png" alt="blueberries"
+                    class="gallery__img"></div>
         </div>
         <button class="btn btn--gallery" type="button">view more</button>
     </section>
@@ -99,8 +103,12 @@
                 nobis eaque suscipit unde facere delectus praesentium blanditiis aspernatur aliquam, reiciendis
                 obcaecati ab
                 quos vitae. Dolor, quasi quae.</p>
-            <input class="content__input item3" id="subscribe-input" type="email" placeholder="Your email address...">
-            <button class="btn btn--subscribe item4" type="submit" for="subscribe-input">subscribe</button>
+            <form class="form-subscribe">
+                <label for="subscribe-input" class="form__label form-subscribe__label">Your email:</label>
+                <input class="content__input form-subscribe__input" id="subscribe-input" type="email"
+                    placeholder="Your email address...">
+                <button class="btn btn--subscribe item4" type="submit" for="subscribe-input">subscribe</button>
+            </form>
         </div>
     </section>
     <section class="section section--blog" id="blog">
@@ -145,11 +153,16 @@
         <div class="wrapper wrapper--contact">
             <div class="wrapper__form">
                 <form class="form" action="">
-                    <input type="text" class="form__input" placeholder="Your name...">
-                    <input type="email" class="form__input" placeholder="Your email...">
-                    <input type="text" class="form__input" placeholder="Your phone number...">
-                    <textarea class="form__textarea" name="" id="" wrap="hard" placeholder="Your message..."></textarea>
-                </form><button class="btn btn--contact" type="submit">send</button>
+                    <label for="form__input--name" class="form__label">Your name:</label>
+                    <input id="form__input--name" type="text" class="form__input">
+                    <label for="form__input--email" class="form__label">Your email:</label>
+                    <input id="form__input--email" type="email" class="form__input">
+                    <label for="form__input--phone" class="form__label">Your phone number:</label>
+                    <input id="form__input--phone" type="text" class="form__input">
+                    <label for="form__input--message" class="form__label">Your message:</label>
+                    <textarea id="form__input--message" class="form__textarea" name="" wrap="hard"></textarea>
+                    <button class="btn btn--contact" type="submit">send</button>
+                </form>
             </div>
             <dl class="definition-list">
                 <dt class="dt">address</dt>
