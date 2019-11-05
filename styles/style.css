@@ -57,10 +57,6 @@ html {
     background: transparent;
 }
 
-.checkbox-input {
-    display: none;
-}
-
 .menu {
     position: absolute;
     display: flex;
@@ -235,6 +231,9 @@ html {
     border: 1px solid #262626;
     padding-left: 15px;
     outline-color: #262626;
+}
+.form-subscribe__input:focus{
+   border: 1px solid #262626; 
 }
 
 .item1 {
@@ -566,14 +565,14 @@ input:-webkit-autofill:active {
     color: white;
 }
 
-.dd {
+.definition-list__dd {
     font-size: 17px;
     line-height: 25px;
     color: #262626;
     margin-bottom: 15px;
 }
 
-.dt {
+.definition-list__dt {
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -750,10 +749,12 @@ input:-webkit-autofill:active {
 
 @media (max-width: 755px) {
     .menu-button {
-        font-size: 40px;
         display: block;
     }
-
+    .menu-button__img{
+        height:35px;
+        padding:3px;
+    }
     .wrapper {
         width: 100%;
     }
