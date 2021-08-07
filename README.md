@@ -23,7 +23,7 @@ download the files and open index.html in the browser
 
 
 ## Live 📍
-https://klaudiaholyst.github.io/Weekly-WebDev-Challenge-2/
+https://klaudiaholyst.github.io/Simple-website/
 
 ## License 🔱
 Open source license.
